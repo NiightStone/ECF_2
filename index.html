@@ -1,129 +1,136 @@
 <!doctype html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ECF_2</title>
     <link rel="stylesheet" href="dist/css/main.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
-      <div class="container header__inner">
-        <a class="header__logo" href="#">Logo</a>
+        <div class="container header__inner">
 
-        <button class="header__burger" type="button" aria-label="Menu">
-          ☰
-        </button>
+            <a class="header__logo" href="#" aria-label="Home">
+                <img src="./src/assets/images/logo.svg" alt="Ik developers" />
+            </a>
 
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li><a href="#hero">Accueil</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul class="nav__menu">
+                    <li class="nav__item"><a class="nav__link" href="#about">About us</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#case-studies">Case Studies</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#blog">Blog</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#how-it-works">How it Works</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#hire">Hire</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn btn--header" href="#contact">Contact us</a>
+
+        </div>
     </header>
 
+
+
     <main>
-      <section id="hero" class="hero">
-        <div class="container hero__inner">
-          <div class="hero__text">
-            <h1>Titre principal</h1>
-            <p>Texte d’accroche (à remplacer par le PNG).</p>
-            <a class="btn" href="#contact">Bouton</a>
-          </div>
+        <section id="hero" class="hero">
+            <div class="container hero__inner">
+                <div class="hero__text">
+                    <h1>Titre principal</h1>
+                    <p>Texte d’accroche (à remplacer par le PNG).</p>
+                    <a class="btn" href="#contact">Bouton</a>
+                </div>
 
-          <div class="hero__image">
-            <img src="assets/img/hero.png" alt="Image principale" />
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about">
-        <div class="container">
-          <h2>À propos</h2>
-          <p>Texte de présentation (selon le PNG).</p>
-
-          <div class="about__cards">
-            <article class="card">
-              <h3>Titre 1</h3>
-              <p>Description.</p>
-            </article>
-
-            <article class="card">
-              <h3>Titre 2</h3>
-              <p>Description.</p>
-            </article>
-
-            <article class="card">
-              <h3>Titre 3</h3>
-              <p>Description.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="services">
-        <div class="container">
-          <h2>Services</h2>
-
-          <div class="services__items">
-            <article class="service">
-              <h3>Service 1</h3>
-              <p>Description.</p>
-            </article>
-
-            <article class="service">
-              <h3>Service 2</h3>
-              <p>Description.</p>
-            </article>
-
-            <article class="service">
-              <h3>Service 3</h3>
-              <p>Description.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <div class="container contact__inner">
-          <div class="contact__text">
-            <h2>Contact</h2>
-            <p>Petit texte (selon le PNG).</p>
-          </div>
-
-          <form class="form" action="#" method="post">
-            <div class="form__group">
-              <label for="name">Nom</label>
-              <input id="name" name="name" type="text" required />
+                <div class="hero__image">
+                    <img src="assets/img/hero.png" alt="Image principale" />
+                </div>
             </div>
+        </section>
 
-            <div class="form__group">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
+        <section id="about" class="about">
+            <div class="container">
+                <h2>À propos</h2>
+                <p>Texte de présentation (selon le PNG).</p>
+
+                <div class="about__cards">
+                    <article class="card">
+                        <h3>Titre 1</h3>
+                        <p>Description.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Titre 2</h3>
+                        <p>Description.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Titre 3</h3>
+                        <p>Description.</p>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <div class="form__group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Services</h2>
+
+                <div class="services__items">
+                    <article class="service">
+                        <h3>Service 1</h3>
+                        <p>Description.</p>
+                    </article>
+
+                    <article class="service">
+                        <h3>Service 2</h3>
+                        <p>Description.</p>
+                    </article>
+
+                    <article class="service">
+                        <h3>Service 3</h3>
+                        <p>Description.</p>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <button class="btn" type="submit">Envoyer</button>
-          </form>
-        </div>
-      </section>
+        <section id="contact" class="contact">
+            <div class="container contact__inner">
+                <div class="contact__text">
+                    <h2>Contact</h2>
+                    <p>Petit texte (selon le PNG).</p>
+                </div>
+
+                <form class="form" action="#" method="post">
+                    <div class="form__group">
+                        <label for="name">Nom</label>
+                        <input id="name" name="name" type="text" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required />
+                    </div>
+
+                    <div class="form__group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button class="btn" type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <p>© 2025 - ECF_2</p>
-      </div>
+        <div class="container">
+            <p>© 2025 - ECF_2</p>
+        </div>
     </footer>
 
-  </body>
-</html>
+</body>
 
+</html>
