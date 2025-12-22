@@ -1,0 +1,6 @@
+node_modules/
+dist/css/*.map
+
+# Heavy / useless exports
+src/assets/images/*.exe
+src/assets/images/*.me

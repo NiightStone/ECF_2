@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.container--nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.container--hero {
+  width: 1145px;
+  margin-left: 104px;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .container--hero {
+    width: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .container--nav {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.hero {
+  background: #ffffff;
+  padding: 54px 0 70px;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 56px;
+}
+
+.hero__title {
+  color: #1a202c;
+  margin: 0 0 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero__text {
+  margin: 0 0 26px;
+  max-width: 52ch;
+  color: #4a5568;
+}
+
+.hero__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .hero__media {
+    order: -1;
+  }
+}
+.services {
+  background: #f6f7fc;
+  height: 602px; /* hauteur figma */
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center; /* centre verticalement */
+}
+
+.services__inner {
+  width: 1145px;
+  margin-left: 104px;
+  margin-right: auto;
+}
+
+/* Titre centré */
+.services__title {
+  text-align: center;
+  margin: 0 0 48px;
+  color: #1a202c;
+}
+
+/* Grille centrée */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  justify-items: center; /* centre chaque carte horizontalement */
+}
+
+/* Cards */
+.service-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid rgba(26, 32, 44, 0.08);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+  padding: 26px 24px 28px;
+  text-align: center;
+  max-width: 260px;
+}
+
+.service-card__icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(93, 50, 176, 0.35);
+  display: grid;
+  place-items: center;
+}
+.service-card__icon img {
+  width: 22px;
+  height: 22px;
+}
+
+.service-card__heading {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.service-card__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+/* Carte mise en avant */
+.service-card--active {
+  border-color: rgba(93, 50, 176, 0.9);
+  box-shadow: 0 20px 45px rgba(93, 50, 176, 0.2);
+}
+.service-card--active .service-card__heading {
+  color: #8a2be2;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .services {
+    height: auto;
+    padding: 90px 0 70px;
+  }
+  .services__inner {
+    width: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 0;
+}
+
+.btn--primary {
+  color: #ffffff;
+  background: linear-gradient(90deg, #5d32b0, #6b4cff);
+  box-shadow: 0 10px 20px rgba(93, 50, 176, 0.18);
+}
+
+/*# sourceMappingURL=main.css.map */
