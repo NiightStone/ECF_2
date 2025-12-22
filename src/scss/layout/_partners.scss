@@ -1,0 +1,135 @@
+$purple: #57007B;
+$pink: #F76680;
+$strip: #F7F7FA;
+$line: #E7DAED;
+$text: #1A202C;
+
+.partners {
+  padding: 3.2rem 0 0;
+  background: #fff;
+}
+
+.partners__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.partners__bar {
+  width: 40px;
+  height: 3px;
+  background: $pink; 
+  border-radius: 2px;
+  flex: 0 0 auto;
+  transform: translateY(-18px);
+}
+
+.partners__titles {
+  flex: 1 1 auto;
+}
+
+.partners__kicker {
+  margin: 0;
+  font-size: 1.15rem;
+  color: $text;
+}
+
+.partners__title {
+  margin: 0.25rem 0 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: $text;
+}
+
+.partners__controls {
+  display: flex;
+  gap: 0.8rem;
+  flex: 0 0 auto;
+}
+
+.partners__btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid $purple;
+  background: transparent;
+  color: $purple;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    display: block;
+  }
+}
+
+.partners__btn--next {
+  background: $purple;
+  color: #fff;
+}
+
+.partners__strip {
+  position: relative;
+  background: $strip;
+  border-top: 1px solid $line;
+  padding: 1.7rem 0;
+  overflow: hidden;
+}
+
+.partners__strip::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 52px;
+  height: 26px;
+  background: $pink;
+  border-radius: 26px 26px 0 0;
+}
+
+.partners__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.partners__logos img {
+  max-height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.partners__ellipse {
+  position: absolute;
+  top: 0;                     
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 56px;
+  height: auto;
+  color: $purple;             
+  pointer-events: none;
+}
+
+/* responsive simple */
+@media (max-width: 900px) {
+  .partners__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .partners__bar {
+    transform: none;
+  }
+
+  .partners__logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+

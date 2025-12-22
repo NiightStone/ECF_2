@@ -1,4 +1,9 @@
 @use "../abstract/variables" as *;
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
 
 .container--nav {
   max-width: $layout-width;
