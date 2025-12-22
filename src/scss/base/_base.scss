@@ -1,0 +1,31 @@
+@use "../abstract/variables" as *;
+
+.container--nav {
+  max-width: $layout-width;
+  margin: 0 auto;
+  padding-left: $header-padding-left;
+  padding-right: $header-padding-right;
+}
+
+.container--hero {
+  width: $hero-width;
+  margin-left: $hero-offset-left;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: $bp-xl) {
+  .container--hero {
+    width: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .container--nav {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+
+

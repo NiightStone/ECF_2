@@ -1,0 +1,17 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 0;
+}
+
+.btn--primary {
+  color: #ffffff;
+  background: linear-gradient(90deg, #5d32b0, #6b4cff);
+  box-shadow: 0 10px 20px rgba(93, 50, 176, 0.18);
+}

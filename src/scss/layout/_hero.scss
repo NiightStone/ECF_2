@@ -1,0 +1,45 @@
+@use "../abstract/variables" as *;
+
+.hero {
+  background: $color-white;
+  padding: 54px 0 70px; 
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr; 
+  align-items: center;
+  gap: 56px;
+}
+
+.hero__title {
+  color: $color-black;
+  margin: 0 0 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero__text {
+  margin: 0 0 26px;
+  max-width: 52ch;
+  color: $color-text; 
+}
+
+
+.hero__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: $bp-lg) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero__media {
+    order: -1; 
+  }
+}
