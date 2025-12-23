@@ -12,11 +12,12 @@ $bp-lg: 900px;
 $color-white: #ffffff;
 $color-black: #1a202c;
 $color-text: #4a5568;
+$color-red:  #f76680;
 
 $shadow-primary: 0 10px 20px rgba(93, 50, 176, 0.18);
 
 /* Colors */
-$color-primary: #57007B;
+$color-primary: linear-gradient(270deg, #F76680, #57007B);
 $color-text-dark: #2d3748;
 $color-text: #4a5568;
 $color-border: #e7daed;

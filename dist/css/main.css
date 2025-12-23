@@ -689,13 +689,6 @@
   border-radius: 2px;
 }
 
-.tech__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  align-items: center;
-}
-
 .tech__logos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -705,10 +698,113 @@
   row-gap: 3rem;
 }
 
-.tech__logos img {
-  max-height: 48px;
-  width: auto;
+.workflow {
+  padding: 5rem 0 6rem;
+  text-align: center;
+  background: #ffffff;
+}
+
+.workflow__bar {
   display: block;
+  width: 42px;
+  height: 3px;
+  background: linear-gradient(270deg, #F76680, #57007B);
+  border-radius: 2px;
+  margin: 0 auto 1rem;
+}
+
+.workflow__title {
+  margin: 0 0 4rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.workflow__title strong {
+  font-weight: 700;
+}
+
+.workflow__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  row-gap: 3rem;
+  align-items: start;
+}
+
+.workflow-card {
+  border: 1px solid #e7daed;
+  background: #ffffff;
+  text-align: left;
+  padding: 1.6rem 1.6rem 1.4rem;
+}
+
+.workflow-card__title {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #4a5568;
+}
+.workflow-card__title span {
+  color: linear-gradient(270deg, #F76680, #57007B);
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
+
+.workflow-card__step {
+  color: linear-gradient(270deg, #F76680, #57007B);
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
+
+.workflow-card__text {
+  margin: 0;
+  color: #718096;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* la ligne du milieu */
+.workflow-line {
+  grid-column: 1/-1;
+  height: 2px;
+  background: #f76680;
+  position: relative;
+  margin: 0.5rem 0;
+}
+
+/* les lignes verticalles (j'arrive pas a les connecté a la ligne pricnipale */
+.workflow-card--top {
+  position: relative;
+}
+.workflow-card--top::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -38px;
+  width: 2px;
+  height: 32px;
+  background: #f76680;
+  transform: translateX(-50%);
+}
+
+.workflow-card--bottom {
+  position: relative;
+}
+.workflow-card--bottom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  width: 2px;
+  height: 32px;
+  background: #f76680;
+  transform: translateX(-50%);
+}
+
+.workflow-line__trophy {
+  position: absolute;
+  right: -28px;
+  top: -18px;
+  font-size: 28px;
 }
 
 .btn {
