@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* Colors */
+/* Radius */
+/* Spacing */
+/* Font sizes */
 .container {
   width: min(1100px, 92%);
   margin: 0 auto;
@@ -502,18 +506,6 @@
   font-weight: 700;
 }
 
-.case--blue .case__content {
-  background: #f3f6ff;
-}
-
-.case--green .case__content {
-  background: #f1fdf9;
-}
-
-.case--pink .case__content {
-  background: #fdf1f9;
-}
-
 .case__text {
   margin: 0 0 1.5rem;
   line-height: 1.8;
@@ -539,6 +531,106 @@
     padding: 1.8rem;
   }
 }
+.approach {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.approach__bar {
+  display: inline-block;
+  width: 42px;
+  height: 3px;
+  background: #57007B;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.approach__title {
+  margin: 0 0 2.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.approach__title strong {
+  font-weight: 700;
+}
+
+.approach__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.approach-card {
+  border: 1px solid #e7daed;
+  padding: 2.5rem;
+  background: #fff;
+}
+
+.approach-card__row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.approach-card__icon {
+  flex: 0 0 56px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.approach-card__icon img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.approach-card__icon--rocket {
+  background: linear-gradient(200deg, #29272E, #27272E);
+}
+
+.approach-card__icon--tag {
+  background: linear-gradient(200deg, #68DBF2, #509CF5);
+}
+
+.approach-card__icon--heart_rate {
+  background: linear-gradient(200deg, #FF92AE, #FF3D9A);
+}
+
+.approach-card__icon--shield {
+  background: linear-gradient(200deg, #67E9F1, #24E795);
+}
+
+.approach-card__icon--succes {
+  background: linear-gradient(200deg, #FFEF5E, #F7936F);
+}
+
+.approach-card__icon--padlock {
+  background: linear-gradient(200deg, #F76680, #57007B);
+}
+
+.approach-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.approach-card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.approach-card__text {
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

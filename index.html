@@ -1,108 +1,109 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ECF_2</title>
-    <link rel="stylesheet" href="dist/css/main.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container header__inner">
-        <a class="header__logo" href="#">Logo</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECF_2</title>
+  <link rel="stylesheet" href="dist/css/main.css" />
+</head>
 
-        <button class="header__burger" type="button" aria-label="Menu">
-          ☰
-        </button>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#">Logo</a>
 
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li><a href="#hero">Accueil</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+      <button class="header__burger" type="button" aria-label="Menu">
+        ☰
+      </button>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            Great Product is <br />
+            built by great teams
+          </h1>
+
+          <p class="hero__text">
+            We help build and manage a team of world-class developers to bring your vision to life.
+          </p>
+
+          <a class="btn btn--primary" href="#contact">Let’s get started!</a>
+        </div>
+
+        <div class="hero__media" aria-hidden="true">
+          <img src="./src/assets/images/hero.svg" alt="" />
+        </div>
+
       </div>
-    </header>
-
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-  <div class="container hero__inner">
-
-    <div class="hero__content">
-      <h1 class="hero__title" id="hero-title">
-        Great Product is <br />
-        built by great teams
-      </h1>
-
-      <p class="hero__text">
-        We help build and manage a team of world-class developers to bring your vision to life.
-      </p>
-
-      <a class="btn btn--primary" href="#contact">Let’s get started!</a>
-    </div>
-
-    <div class="hero__media" aria-hidden="true">
-      <img src="./src/assets/images/hero.svg" alt="" />
-    </div>
-
-  </div>
-</section>
+    </section>
 
 
- <section class="services" aria-labelledby="services-title">
-  <div class="services__inner">
+    <section class="services" aria-labelledby="services-title">
+      <div class="services__inner">
 
-    <h2 class="services__title" id="services-title">
-      Services we offer
-    </h2>
+        <h2 class="services__title" id="services-title">
+          Services we offer
+        </h2>
 
-    <div class="services__grid">
-      <article class="service-card">
-        <div class="service-card__icon">
-          <img src="./src/assets/images/service-web.svg" alt="" />
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="./src/assets/images/service-web.svg" alt="" />
+            </div>
+            <h3 class="service-card__heading">Web Design &amp; Development</h3>
+            <p class="service-card__text">
+              A Website is an extension of yourself and we can help you to express it properly.
+            </p>
+          </article>
+
+          <article class="service-card service-card--active">
+            <div class="service-card__icon">
+              <img src="./src/assets/images/service-dev.svg" alt="" />
+            </div>
+            <h3 class="service-card__heading">Web Design &amp; Development</h3>
+            <p class="service-card__text">
+              A Website is an extension of yourself and we can help you to express it properly.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="./src/assets/images/service-app.svg" alt="" />
+            </div>
+            <h3 class="service-card__heading">Mobile Apps Development</h3>
+            <p class="service-card__text">
+              A Website is an extension of yourself and we can help you to express it properly.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <img src="./src/assets/images/service-testing.svg" alt="" />
+            </div>
+            <h3 class="service-card__heading">Software Testing Services</h3>
+            <p class="service-card__text">
+              A Website is an extension of yourself and we can help you to express it properly.
+            </p>
+          </article>
         </div>
-        <h3 class="service-card__heading">Web Design &amp; Development</h3>
-        <p class="service-card__text">
-          A Website is an extension of yourself and we can help you to express it properly.
-        </p>
-      </article>
 
-      <article class="service-card service-card--active">
-        <div class="service-card__icon">
-          <img src="./src/assets/images/service-dev.svg" alt="" />
-        </div>
-        <h3 class="service-card__heading">Web Design &amp; Development</h3>
-        <p class="service-card__text">
-          A Website is an extension of yourself and we can help you to express it properly.
-        </p>
-      </article>
-
-      <article class="service-card">
-        <div class="service-card__icon">
-          <img src="./src/assets/images/service-app.svg" alt="" />
-        </div>
-        <h3 class="service-card__heading">Mobile Apps Development</h3>
-        <p class="service-card__text">
-          A Website is an extension of yourself and we can help you to express it properly.
-        </p>
-      </article>
-
-      <article class="service-card">
-        <div class="service-card__icon">
-          <img src="./src/assets/images/service-testing.svg" alt="" />
-        </div>
-        <h3 class="service-card__heading">Software Testing Services</h3>
-        <p class="service-card__text">
-          A Website is an extension of yourself and we can help you to express it properly.
-        </p>
-      </article>
-    </div>
-
-  </div>
-</section>
+      </div>
+    </section>
 
 
     <div class="services__dots" aria-hidden="true">
@@ -112,187 +113,279 @@
       <span class="dot"></span>
       <span class="dot"></span>
     </div>
-  </div>
-</section>
-<section class="partners">
-  <div class="container partners__top">
-    <span class="partners__bar" aria-hidden="true"></span>
-
-    <div class="partners__titles">
-      <p class="partners__kicker">Meet the People</p>
-      <h2 class="partners__title">We are Working With</h2>
     </div>
+    </section>
+    <section class="partners">
+      <div class="container partners__top">
+        <span class="partners__bar" aria-hidden="true"></span>
 
-    <div class="partners__controls">
-      <button class="partners__btn partners__btn--prev" type="button" aria-label="preveious">
-        ‹
-      </button>
-      <button class="partners__btn partners__btn--next" type="button" aria-label="Left">
-        ›
-      </button>
-    </div>
-  </div>
-
-  
-  <div class="partners__strip">
-    
-    <img
-      src="assets/svg/ellipse-18.svg"
-      alt=""
-      class="partners__ellipse"
-      aria-hidden="true"
-    />
-
-    <div class="container partners__logos">
-      <img src="src/assets/images/Logo-9.jpg" alt="Sampath Cream House" />
-       <img src="src/assets/images/logo8.svg" alt="Sampath Cream House" />
-      <img src="src/assets/images/adclipse.svg" alt="AdClipse" />
-      <img src="src/assets/images/PJC Bridge.svg" alt="PJC Bridge" />
-      <img src="src/assets/images/Click rder.svg" alt="ClickOrder" />
-      <img src="src/assets/images/TechMate.svg" alt="TechMate" />
-    </div>
-  </div>
-</section>
-<section class="clients" id="clients">
-  <div class="container clients__inner">
-    <span class="clients__bar" aria-hidden="true"></span>
-
-    <h2 class="clients__title">
-      Why cutomers love<br />
-      <strong>working with us</strong>
-    </h2>
-
-    <div class="clients__text-wrap">
-      <span class="clients__quote clients__quote--left" aria-hidden="true">“</span>
-
-      <p class="clients__text">
-        Without any doubt I recommend Alcaline Solutions as one of the best web design and digital
-        marketing agencies. One of the best agencies I’ve came across so far. Wouldn’t be
-        hesitated to introduce their work to someone else.
-      </p>
-
-      <span class="clients__quote clients__quote--right" aria-hidden="true">”</span>
-    </div>
-
-    <button class="clients__arrow clients__arrow--left" type="button" aria-label="Previous">
-      ‹
-    </button>
-    <button class="clients__arrow clients__arrow--right" type="button" aria-label="Next">
-      ›
-    </button>
-
-    <div class="clients__list">
-      <article class="client">
-        <img class="client__img" src="src/assets/images/Romeena De Silva 1.svg" alt="Client 1" />
-        <div class="client__stars" aria-label="5 stars">★★★★★</div>
-        <p class="client__name">Romeena De Silva</p>
-        <p class="client__job">Janet Cosmetics</p>
-      </article>
-
-      <article class="client">
-        <img class="client__img" src="src/assets/images/Romeena De Silva 2.svg" alt="Client 2" />
-        <div class="client__stars" aria-label="5 stars">★★★★★</div>
-        <p class="client__name">Romeena De Silva</p>
-        <p class="client__job">Janet Cosmetics</p>
-      </article>
-
-      <article class="client client--active">
-        <img class="client__img" src="src/assets/images/Imran Khan.svg" alt="Imran Khan" />
-        <div class="client__stars" aria-label="5 stars">★★★★★</div>
-        <p class="client__name">Imran Khan</p>
-        <p class="client__job">Software Engineer</p>
-      </article>
-
-      <article class="client">
-        <img class="client__img" src="src/assets/images/Romeena De Silva 3.svg" alt="Client 4" />
-        <div class="client__stars" aria-label="5 stars">★★★★★</div>
-        <p class="client__name">Romeena De Silva</p>
-        <p class="client__job">Janet Cosmetics</p>
-      </article>
-
-      <article class="client">
-        <img class="client__img" src="src/assets/images/Romeena De Silva 4.svg" alt="Client 5" />
-        <div class="client__stars" aria-label="5 stars">★★★★★</div>
-        <p class="client__name">Romeena De Silva</p>
-        <p class="client__job">Janet Cosmetics</p>
-      </article>
-    </div>
-  </div>
-</section>
-<section class="case-studies" id="case-studies">
-  <div class="container">
-    <span class="case-studies__bar" aria-hidden="true"></span>
-
-    <h2 class="case-studies__title">
-      Our recent <br />
-      <strong>Case studies</strong>
-    </h2>
-
-    <div class="case-studies__list">
-      <article class="case case--blue">
-        <div class="case__media case__media--blue">
-          <img src="src/assets/images/Case-study__blue.svg" alt="App screens" />
+        <div class="partners__titles">
+          <p class="partners__kicker">Meet the People</p>
+          <h2 class="partners__title">We are Working With</h2>
         </div>
 
-        <div class="case__content">
-          <h3 class="case__name">Website Design for SCFC Canada</h3>
-          <p class="case__text">
-            Born out of vision, single-minded objective that puts service before
-            anything else, Swift Clearance and Forwarding Corp. surging forth to
-            deliver the best services in the shipping and logistics scenario.
-          </p>
-          <a href="#" class="case__link">Read more →</a>
+        <div class="partners__controls">
+          <button class="partners__btn partners__btn--prev" type="button" aria-label="preveious">
+            ‹
+          </button>
+          <button class="partners__btn partners__btn--next" type="button" aria-label="Left">
+            ›
+          </button>
         </div>
-      </article>
-
-      <article class="case case--green">
-        <div class="case__media case__media--green">
-          <img src="src/assets/images/Case-study__green.svg" alt="App screens" />
-        </div>
-
-        <div class="case__content">
-          <h3 class="case__name">Website Design for SCFC Canada</h3>
-          <p class="case__text--green">
-            Born out of vision, single-minded objective that puts service before
-            anything else, Swift Clearance and Forwarding Corp. surging forth to
-            deliver the best services in the shipping and logistics scenario.
-          </p>
-          <a href="#" class="case__link">Read more →</a>
-        </div>
-      </article>
-
-      <article class="case case--pink">
-        <div class="case__media case__media--pink">
-          <img src="src/assets/images/Case-study__pink.svg" alt="App screens" />
-        </div>
-
-        <div class="case__content">
-          <h3 class="case__name">Website Design for SCFC Canada</h3>
-          <p class="case__text--pink">
-            Born out of vision, single-minded objective that puts service before
-            anything else, Swift Clearance and Forwarding Corp. surging forth to
-            deliver the best services in the shipping and logistics scenario.
-          </p>
-          <a href="#" class="case__link">Read more →</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <p>© 2025 - ECF_2</p>
       </div>
-    </footer>
 
-  </body>
+
+      <div class="partners__strip">
+
+        <img src="assets/svg/ellipse-18.svg" alt="" class="partners__ellipse" aria-hidden="true" />
+
+        <div class="container partners__logos">
+          <img src="src/assets/images/Logo-9.jpg" alt="Sampath Cream House" />
+          <img src="src/assets/images/logo8.svg" alt="Sampath Cream House" />
+          <img src="src/assets/images/adclipse.svg" alt="AdClipse" />
+          <img src="src/assets/images/PJC Bridge.svg" alt="PJC Bridge" />
+          <img src="src/assets/images/Click rder.svg" alt="ClickOrder" />
+          <img src="src/assets/images/TechMate.svg" alt="TechMate" />
+        </div>
+      </div>
+    </section>
+    <section class="clients" id="clients">
+      <div class="container clients__inner">
+        <span class="clients__bar" aria-hidden="true"></span>
+
+        <h2 class="clients__title">
+          Why cutomers love<br />
+          <strong>working with us</strong>
+        </h2>
+
+        <div class="clients__text-wrap">
+          <span class="clients__quote clients__quote--left" aria-hidden="true">“</span>
+
+          <p class="clients__text">
+            Without any doubt I recommend Alcaline Solutions as one of the best web design and digital
+            marketing agencies. One of the best agencies I’ve came across so far. Wouldn’t be
+            hesitated to introduce their work to someone else.
+          </p>
+
+          <span class="clients__quote clients__quote--right" aria-hidden="true">”</span>
+        </div>
+
+        <button class="clients__arrow clients__arrow--left" type="button" aria-label="Previous">
+          ‹
+        </button>
+        <button class="clients__arrow clients__arrow--right" type="button" aria-label="Next">
+          ›
+        </button>
+
+        <div class="clients__list">
+          <article class="client">
+            <img class="client__img" src="src/assets/images/Romeena De Silva 1.svg" alt="Client 1" />
+            <div class="client__stars" aria-label="5 stars">★★★★★</div>
+            <p class="client__name">Romeena De Silva</p>
+            <p class="client__job">Janet Cosmetics</p>
+          </article>
+
+          <article class="client">
+            <img class="client__img" src="src/assets/images/Romeena De Silva 2.svg" alt="Client 2" />
+            <div class="client__stars" aria-label="5 stars">★★★★★</div>
+            <p class="client__name">Romeena De Silva</p>
+            <p class="client__job">Janet Cosmetics</p>
+          </article>
+
+          <article class="client client--active">
+            <img class="client__img" src="src/assets/images/Imran Khan.svg" alt="Imran Khan" />
+            <div class="client__stars" aria-label="5 stars">★★★★★</div>
+            <p class="client__name">Imran Khan</p>
+            <p class="client__job">Software Engineer</p>
+          </article>
+
+          <article class="client">
+            <img class="client__img" src="src/assets/images/Romeena De Silva 3.svg" alt="Client 4" />
+            <div class="client__stars" aria-label="5 stars">★★★★★</div>
+            <p class="client__name">Romeena De Silva</p>
+            <p class="client__job">Janet Cosmetics</p>
+          </article>
+
+          <article class="client">
+            <img class="client__img" src="src/assets/images/Romeena De Silva 4.svg" alt="Client 5" />
+            <div class="client__stars" aria-label="5 stars">★★★★★</div>
+            <p class="client__name">Romeena De Silva</p>
+            <p class="client__job">Janet Cosmetics</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="case-studies" id="case-studies">
+      <div class="container">
+        <span class="case-studies__bar" aria-hidden="true"></span>
+
+        <h2 class="case-studies__title">
+          Our recent <br />
+          <strong>Case studies</strong>
+        </h2>
+
+        <div class="case-studies__list">
+          <article class="case case--blue">
+            <div class="case__media case__media--blue">
+              <img src="src/assets/images/Case-study__blue.svg" alt="App screens" />
+            </div>
+
+            <div class="case__content">
+              <h3 class="case__name">Website Design for SCFC Canada</h3>
+              <p class="case__text">
+                Born out of vision, single-minded objective that puts service before
+                anything else, Swift Clearance and Forwarding Corp. surging forth to
+                deliver the best services in the shipping and logistics scenario.
+              </p>
+              <a href="#" class="case__link">Read more →</a>
+            </div>
+          </article>
+
+          <article class="case case--green">
+            <div class="case__media case__media--green">
+              <img src="src/assets/images/Case-study__green.svg" alt="App screens" />
+            </div>
+
+            <div class="case__content">
+              <h3 class="case__name">Website Design for SCFC Canada</h3>
+              <p class="case__text--green">
+                Born out of vision, single-minded objective that puts service before
+                anything else, Swift Clearance and Forwarding Corp. surging forth to
+                deliver the best services in the shipping and logistics scenario.
+              </p>
+              <a href="#" class="case__link">Read more →</a>
+            </div>
+          </article>
+
+          <article class="case case--pink">
+            <div class="case__media case__media--pink">
+              <img src="src/assets/images/Case-study__pink.svg" alt="App screens" />
+            </div>
+
+            <div class="case__content">
+              <h3 class="case__name">Website Design for SCFC Canada</h3>
+              <p class="case__text--pink">
+                Born out of vision, single-minded objective that puts service before
+                anything else, Swift Clearance and Forwarding Corp. surging forth to
+                deliver the best services in the shipping and logistics scenario.
+              </p>
+              <a href="#" class="case__link">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="approach" id="approach">
+      <div class="container">
+        <span class="approach__bar" aria-hidden="true"></span>
+
+        <h2 class="approach__title">
+          Our design and<br />
+          <strong>development approach</strong>
+        </h2>
+
+        <div class="approach__grid">
+          <article class="approach-card">
+            <div class="approach-card__row">
+              <div class="approach-card__icon approach-card__icon--rocket">
+                <img src="src/assets/images/rocket.svg" alt="rocket" aria-hidden="true" />
+              </div>
+              <div class="approach-card__content">
+              <h3 class="approach-card__title">UX Driven Engineering</h3>
+              <p class="approach-card__text">
+                Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.
+              </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="approach-card">
+            <div class="approach-card__row">
+              <div class="approach-card__icon approach-card__icon--tag">
+                <img src="src/assets/images/Code.svg" alt="tag" aria-hidden="true" />
+              </div>
+              <div class="approach-card__content">
+              <h3 class="approach-card__title">Developing Shared Understanding</h3>
+              <p class="approach-card__text">
+                Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.
+              </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="approach-card">
+            <div class="approach-card__row">
+              <div class="approach-card__icon approach-card__icon--heart_rate">
+                <img src="src/assets/images/Heart_rate.svg" alt="heart_rate" aria-hidden="true" />
+              </div>
+              <div class="approach-card__content">
+              <h3 class="approach-card__title">Proven Experience and Expertise</h3>
+              <p class="approach-card__text">
+                Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.
+              </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="approach-card ">
+            <div class="approach-card__row">
+              <div class="approach-card__icon approach-card__icon--shield">
+                <img src="src/assets/images/Shield.svg" alt="Shield" aria-hidden="true" />
+              </div>
+              <div class="approach-card__content">
+              <h3 class="approach-card__title">Security &amp; Compliance</h3>
+              <p class="approach-card__text">
+               Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.
+              </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="approach-card">
+            <div class="approach-card__row">
+              <div class="approach-card__icon approach-card__icon--succes">
+                <img src="src/assets/images/Success.svg" alt="Success" aria-hidden="true" />
+              </div>
+              <div class="approach-card__content">
+              <h3 class="approach-card__title">Code Reviews</h3>
+              <p class="approach-card__text">
+                Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.
+              </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="approach-card">
+            <div class="approach-card__row">
+              <div class="approach-card__icon approach-card__icon--padlock">
+                <img src="src/assets/images/Padlock.svg" alt="Padlock" aria-hidden="true" />
+              </div>
+              <div class="approach-card__content">
+              <h3 class="approach-card__title">Quality Assurance</h3>
+              <p class="approach-card__text">
+                Unlike other companies, we are a UX first development company. Projects are driven by designers and they make sure design and experiences translate to code.
+              </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 - ECF_2</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
-
