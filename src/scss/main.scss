@@ -1,9 +1,8 @@
 @use "abstract/variables";
 @use "abstract/mixins";
-
 @use "base/reset";
+@use "base/fonts";
 @use "base/base";
-
 @use "layout/header";
 @use "layout/hero";
 @use "layout/services";
@@ -13,11 +12,9 @@
 @use "layout/approach";
 @use "layout/tech";
 @use "layout/process";
-
-
-
+@use "layout/ressources";
+@use "layout/cta";
 @use "layout/footer";
-
 @use "components/buttons";
 @use "components/cards";
 @use "components/forms";

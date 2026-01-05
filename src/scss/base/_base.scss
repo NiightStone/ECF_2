@@ -1,4 +1,9 @@
 @use "../abstract/variables" as *;
+
+body {
+  font-family: $font-primary;
+  }
+  
 .container {
   width: min(1100px, 92%);
   margin: 0 auto;
