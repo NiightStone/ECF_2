@@ -2,34 +2,35 @@
 
 .services {
   background: #f6f7fc;
-  height: 602px;                 /* hauteur figma */
+  height: 602px;                 
   display: flex;
-  justify-content: center;       /* centre horizontalement */
-  align-items: center;           /* centre verticalement */
+  justify-content: center;       
+  align-items: center;          
 }
 
 .services__inner {
   width: $hero-width;
   margin-left: $hero-offset-left;
-  margin-right: auto;
+  margin-right: 0 auto; 
 }
 
-/* Titre centré */
+
 .services__title {
   text-align: center;
   margin: 0 0 48px;
   color: $color-black;
 }
 
-/* Grille centrée */
+
 .services__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
-  justify-items: center;         /* centre chaque carte horizontalement */
+  justify-items: center; 
+  padding-right: 50px !important;        
 }
 
-/* Cards */
+
 .service-card {
   background: $color-white;
   border-radius: 14px;
@@ -69,7 +70,7 @@
   color: $color-text;
 }
 
-/* Carte mise en avant */
+
 .service-card--active {
   border-color: rgba(93, 50, 176, 0.9);
   box-shadow: 0 20px 45px rgba(93, 50, 176, 0.20);
@@ -79,7 +80,7 @@
   }
 }
 
-/* Responsive */
+
 @media (max-width: $bp-xl) {
   .services {
     height: auto;

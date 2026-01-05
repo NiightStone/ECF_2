@@ -77,34 +77,32 @@ body {
 }
 .services {
   background: #f6f7fc;
-  height: 602px; /* hauteur figma */
+  height: 602px;
   display: flex;
-  justify-content: center; /* centre horizontalement */
-  align-items: center; /* centre verticalement */
+  justify-content: center;
+  align-items: center;
 }
 
 .services__inner {
   width: 1145px;
   margin-left: 104px;
-  margin-right: auto;
+  margin-right: 0 auto;
 }
 
-/* Titre centré */
 .services__title {
   text-align: center;
   margin: 0 0 48px;
   color: #1a202c;
 }
 
-/* Grille centrée */
 .services__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
-  justify-items: center; /* centre chaque carte horizontalement */
+  justify-items: center;
+  padding-right: 50px !important;
 }
 
-/* Cards */
 .service-card {
   background: #ffffff;
   border-radius: 14px;
@@ -143,7 +141,6 @@ body {
   color: #4a5568;
 }
 
-/* Carte mise en avant */
 .service-card--active {
   border-color: rgba(93, 50, 176, 0.9);
   box-shadow: 0 20px 45px rgba(93, 50, 176, 0.2);
@@ -152,7 +149,6 @@ body {
   color: #8a2be2;
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
   .services {
     height: auto;
@@ -450,6 +446,7 @@ body {
 .case-studies {
   padding: 5rem 0;
   background: #f7f7fa;
+  text-align: center;
 }
 
 .case-studies__bar {
@@ -535,6 +532,7 @@ body {
 .approach {
   padding: 5rem 0;
   background: #f7f7fa;
+  text-align: center;
 }
 
 .approach__bar {
@@ -726,8 +724,8 @@ body {
 .workflow__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 4rem;
-  row-gap: 3rem;
+  column-gap: 3rem;
+  row-gap: 10px;
   align-items: start;
 }
 
@@ -735,12 +733,13 @@ body {
   border: 1px solid #e7daed;
   background: #ffffff;
   text-align: left;
-  padding: 1.6rem 1.6rem 1.4rem;
+  padding: 1.15rem 1.25rem;
+  border-radius: 10px;
 }
 
 .workflow-card__title {
-  margin: 0 0 0.8rem;
-  font-size: 1.05rem;
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #4a5568;
 }
@@ -760,8 +759,8 @@ body {
 .workflow-card__text {
   margin: 0;
   color: #718096;
-  line-height: 1.7;
-  font-size: 0.95rem;
+  line-height: 1.5;
+  font-size: 0.85rem;
 }
 
 /* la ligne du milieu */
@@ -770,7 +769,7 @@ body {
   height: 2px;
   background: #f76680;
   position: relative;
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
 }
 
 /* les lignes verticalles (j'arrive pas a les connecté a la ligne pricnipale */
@@ -781,9 +780,9 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -38px;
+  bottom: -16px;
   width: 2px;
-  height: 32px;
+  height: 16px;
   background: #f76680;
   transform: translateX(-50%);
 }
@@ -795,18 +794,19 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  top: -38px;
+  top: -16px;
   width: 2px;
-  height: 32px;
+  height: 16px;
   background: #f76680;
   transform: translateX(-50%);
 }
 
 .workflow-line__trophy {
   position: absolute;
-  right: -28px;
-  top: -18px;
-  font-size: 28px;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 26px;
 }
 
 .resources {
@@ -933,7 +933,7 @@ body {
   position: absolute;
   width: 120px;
   height: auto;
-  right: -35px;
+  right: 40px;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
