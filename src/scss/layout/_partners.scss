@@ -78,6 +78,7 @@ $text: #1A202C;
   border-top: 1px solid $line;
   padding: 1.7rem 0;
   overflow: hidden;
+  height: 202px;
 }
 
 .partners__strip::before {
@@ -100,9 +101,10 @@ $text: #1A202C;
 }
 
 .partners__logos img {
-  max-height: 40px;
+  max-height: auto;
   width: auto;
   object-fit: contain;
+  padding: 40px;
 }
 
 .partners__ellipse {
@@ -114,22 +116,5 @@ $text: #1A202C;
   height: auto;
   color: $purple;             
   pointer-events: none;
-}
-
-/* responsive simple */
-@media (max-width: 900px) {
-  .partners__top {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .partners__bar {
-    transform: none;
-  }
-
-  .partners__logos {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 

@@ -330,6 +330,7 @@ body {
   border-top: 1px solid #E7DAED;
   padding: 1.7rem 0;
   overflow: hidden;
+  height: 202px;
 }
 
 .partners__strip::before {
@@ -352,9 +353,10 @@ body {
 }
 
 .partners__logos img {
-  max-height: 40px;
+  max-height: auto;
   width: auto;
   object-fit: contain;
+  padding: 40px;
 }
 
 .partners__ellipse {
@@ -368,20 +370,6 @@ body {
   pointer-events: none;
 }
 
-/* responsive simple */
-@media (max-width: 900px) {
-  .partners__top {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .partners__bar {
-    transform: none;
-  }
-  .partners__logos {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
 .clients {
   padding: 5rem 0 6rem;
   text-align: center;
@@ -619,6 +607,134 @@ body {
     padding: 1.8rem;
   }
 }
+.way {
+  padding: 5.5rem 0;
+  background: #ffffff;
+}
+
+.way__bar {
+  display: block;
+  width: 42px;
+  height: 3px;
+  background: linear-gradient(270deg, #F76680, #57007B);
+  border-radius: 2px;
+  margin: 0 auto 1rem;
+}
+
+.way__title {
+  text-align: center;
+  margin: 0 0 3.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4a5568;
+}
+.way__title strong {
+  font-weight: 700;
+}
+
+.way__list {
+  display: grid;
+  gap: 4rem;
+}
+
+.way-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.way-item--reverse {
+  direction: rtl;
+}
+
+.way-item--reverse > * {
+  direction: ltr;
+}
+
+.way-item__heading {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4a5568;
+}
+
+.way-item__text {
+  margin: 0 0 1rem;
+  color: #718096;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.way-item__highlight {
+  color: linear-gradient(270deg, #F76680, #57007B);
+  font-weight: 500;
+}
+
+.way-item__quote {
+  margin: 1.2rem 0 1.2rem;
+  padding-left: 1rem;
+  border-left: 3px solid linear-gradient(270deg, #F76680, #57007B);
+  color: linear-gradient(270deg, #F76680, #57007B);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.way-item__author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.way-item__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.way-item__name {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.way-item__role {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+.way-item__media {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.way-item__media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  min-height: 280px;
+}
+
+.way-item__dot {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 18px;
+  top: 18px;
+}
+
+.way-item__dot--yellow {
+  right: auto;
+  left: 18px;
+  bottom: 18px;
+  top: auto;
+}
+
 .approach {
   padding: 5rem 0;
   background: #f7f7fa;
