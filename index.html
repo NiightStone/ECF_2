@@ -9,24 +9,26 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container header__inner">
-      <a class="header__logo" href="#">Logo</a>
+  <header class="header" id="top">
+  <div class="container header__inner">
+    <a class="header__logo" href="#top" aria-label="Home">
+      <img src="src/assets/images/logo.svg" alt="Ik developers" />
+    </a>
 
-      <button class="header__burger" type="button" aria-label="Menu">
-        ☰
-      </button>
+    <nav class="header__nav" aria-label="Primary">
+      <ul class="header__menu">
+        <li><a class="header__link" href="#about">About us</a></li>
+        <li><a class="header__link" href="#services">Services</a></li>
+        <li><a class="header__link" href="#case-studies">Case Studies</a></li>
+        <li><a class="header__link" href="#blog">Blog</a></li>
+        <li><a class="header__link" href="#workflow">How it Works</a></li>
+        <li><a class="header__link" href="#hire">Hire</a></li>
+      </ul>
+    </nav>
 
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li><a href="#hero">Accueil</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <a class="header__cta" href="#contact">Contact us</a>
+  </div>
+</header>
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
